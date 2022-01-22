@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss"
+import Nav from "./components/Nav";
+import Principal from "./components/Principal";
+import Footer from "./components/Footer";
 
-function App() {
+
+const App =()=>{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav/>
+      <Principal
+      titulo="ZOE"
+      subtitulo="zoe tiene 6 años y cumple el 27/01/2015"
+      imagen="https://cdn2.excelsior.com.mx/media/styles/image800x600/public/pictures/2021/06/09/2592367.jpg"
+      />
+      <Footer/>
     </div>
-  );
+  )
 }
 
 export default App;
